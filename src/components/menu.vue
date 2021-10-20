@@ -4,8 +4,8 @@
     <h2>Tiendita de Doña Inés</h2>
     <div class="opciones">
       <ul>
-        <li>Iniciar Sesión</li>
-        <li>Registrarse</li>
+        <router-link to="/"><li>Iniciar Sesión</li></router-link>
+        <router-link to="/"><li>Registrarse</li></router-link>
       </ul>
     </div>
   </div>
@@ -63,4 +63,5 @@ export default {
   border-radius: 15px;
   color: black;
 }
+
 </style>
