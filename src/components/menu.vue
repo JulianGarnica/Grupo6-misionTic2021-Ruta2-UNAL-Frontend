@@ -4,7 +4,7 @@
     <h2>Tiendita de Doña Inés</h2>
     <div class="opciones">
       <ul>
-        <router-link to="/"><li>Iniciar Sesión</li></router-link>
+        <router-link to="/login"><li>Iniciar Sesión</li></router-link>
         <router-link to="/"><li>Registrarse</li></router-link>
       </ul>
     </div>
