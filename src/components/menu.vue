@@ -5,7 +5,7 @@
     <div class="opciones">
       <ul>
         <router-link to="/login"><li>Iniciar Sesión</li></router-link>
-        <router-link to="/"><li>Registrarse</li></router-link>
+        <router-link to="/register"><li>Registrarse</li></router-link>
       </ul>
     </div>
   </div>

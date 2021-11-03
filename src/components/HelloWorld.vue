@@ -4,7 +4,8 @@
     <!-- <p class="carritoInicio"><font-awesome-icon icon="shopping-cart" /></p> -->
     <h1>{{ msg }}</h1>
     <p>
-      Aquí vendemos todo lo que sumercé quiera.
+      Aquí vendemos todo lo que sumercé quiera. <br>
+      Hoy no fio, mañana sí.
       </p>
   </div>
 </template>
