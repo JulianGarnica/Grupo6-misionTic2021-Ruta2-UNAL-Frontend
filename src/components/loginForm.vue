@@ -8,7 +8,7 @@
       <br><br>
       ¿Aún no te haz registrado?
       <br>
-      Regístrate ahora
+      <router-link to="/register">Regístrate ahora</router-link>
     </form>
   </div>
 </template>
@@ -35,9 +35,9 @@ export default {
             'Content-Type': 'application/json'
           }
         }).then(result => {
-        console.log(result.data)
         localStorage.access = result.data.access
         localStorage.refresh = result.data.refresh
+        window.location.href = ('/')
       }).catch(error => {
         this.$swal({
           icon: 'error',
@@ -53,6 +53,10 @@ export default {
 </script>
 
 <style scoped>
+  a{
+    color: #FF7930;
+  }
+
   .formLogin{
     width: auto;
     max-width: 400px;

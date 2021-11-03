@@ -2,10 +2,10 @@
   <div class="sideBar">
     <h2>sideBar</h2>
     <ul>
-      <a href=""><li><font-awesome-icon icon="box" /> Productos</li></a>
-      <a href=""><li><font-awesome-icon icon="user-tag" /> Clientes</li></a>
-      <a href=""><li><font-awesome-icon icon="piggy-bank" /> Ventas</li></a>
-      <a href=""><li><font-awesome-icon icon="users" /> Usuarios</li></a>
+      <router-link to="/productos"><li><font-awesome-icon icon="box" /> Productos</li></router-link>
+      <router-link to="/clientes"><li><font-awesome-icon icon="user-tag" /> Clientes</li></router-link>
+      <router-link to="/ventas"><li><font-awesome-icon icon="piggy-bank" /> Ventas</li></router-link>
+      <router-link to="/usuarios"><li><font-awesome-icon icon="users" /> Usuarios</li></router-link>
     </ul>
   </div>
 </template>

@@ -4,8 +4,8 @@
     <h2>Tiendita de Doña Inés</h2>
     <div class="opciones">
       <ul>
-        <router-link to="/login"><li>Iniciar Sesión</li></router-link>
-        <router-link to="/register"><li>Registrarse</li></router-link>
+        <li>Bienvenido {{dataUser.name}}</li>
+        <li @click="cerrarSesion()">Cerrar sesión</li>
       </ul>
     </div>
   </div>
@@ -13,6 +13,16 @@
 
 <script>
 export default {
+  props: {
+    dataUser: Object
+  },
+  methods: {
+    cerrarSesion () {
+      localStorage.removeItem('refresh')
+      localStorage.removeItem('access')
+      this.$router.go('/')
+    }
+  }
 }
 </script>
 
@@ -52,10 +62,13 @@ export default {
   line-height: 60px;
 }
 .navbar .opciones ul li{
-  width: 150px;
+  width: auto;
   height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .navbar .opciones ul li:hover{
